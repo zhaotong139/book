@@ -29,7 +29,7 @@ class Book():
         number = re.findall(Book.number_pattern,htmls)
         eyse = re.findall(Book.eyse_pattern,htmls)
         out = re.findall(Book.out_pattern,htmls) 
-        author = {'书名':bookname,'作者':name,'出版社':number,'出版日期':eyse,'简介':out}
+        author = {'书名':bookname,'作者':name,'出版社':number,'出版日期':out,'简介':eyse}
         authors.append(author)
         print(authors)
     def go(self):
